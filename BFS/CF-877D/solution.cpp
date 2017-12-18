@@ -37,7 +37,7 @@ int bfs(int x1, int y1, int x2, int y2 ) {
                     vis[tx][ty] = 1;
                     q.push( {tx, ty} );
                 }
-                if( dis[tx][ty] < dis[xx][yy] + 1 ) break;
+                if( dis[tx][ty] < dis[xx][yy] + 1 ) break;  /// This line used for optimization
             }
         }
     }
